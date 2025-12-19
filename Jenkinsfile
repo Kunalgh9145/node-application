@@ -1,7 +1,7 @@
 pipeline{
     agent {label "kunalaws"}
 
-    Stages {
+    stages {
 
         Stage('Code Checkout'){
 
