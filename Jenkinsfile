@@ -36,6 +36,11 @@ pipeline{
                 sh "npm i"
             }
         }
-        
+        stage("Testing"){
+            steps{
+                sh "npm run test"
+            }
+        }
+
     }
 }
