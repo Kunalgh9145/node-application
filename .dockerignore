@@ -1,0 +1,5 @@
+Jenkinsfile
+Dockerfile
+node_modules
+.gitignore
+.git
