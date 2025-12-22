@@ -12,7 +12,7 @@ describe("Express API Test Cases", () => {
   test("GET /api/hello", async () => {
     const res = await request(app).get("/api/hello");
     expect(res.statusCode).toBe(200);
-    expect(res.body.message).toBe("Hello from Express API");
+    expect(res.body.message).toBe("Hello from Kunal");
     expect(res.body.method).toBe("GET");
   });
 
