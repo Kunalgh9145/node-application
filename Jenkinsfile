@@ -48,6 +48,8 @@ pipeline{
         }
         stage("Deploying"){
             steps{
+                sh "docker stop my-webapp-container || true"
+                sh "docker rm my-webapp-container || true"
                 sh "docker run -d -p 3000:3000 --name my-webapp-container my-web-app"
             }
         }
