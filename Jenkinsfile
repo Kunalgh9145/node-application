@@ -41,6 +41,11 @@ pipeline{
                 sh "npm run test"
             }
         }
+        stage("Build Docker image"){
+            steps{
+                sh "docker build -t my-web-app ."
+            }
+        }
 
     }
 }
