@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 
 app.get("/api/hello", (req, res) => {
   res.json({
-    message: "Hello from Express API",
+    message: "Hello from Kunal",
     method: req.method
   });
 });
