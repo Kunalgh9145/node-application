@@ -46,6 +46,11 @@ pipeline{
                 sh "docker build -t my-web-app ."
             }
         }
+        stage("Deploying"){
+            steps{
+                sh "docker run -d -p 3000:3000 --name my-webapp-container my-web-app"
+            }
+        }
 
     }
 }
